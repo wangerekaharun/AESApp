@@ -5,7 +5,7 @@ import android.os.Bundle
 import ke.co.appslab.aesapp.R
 
 /**
- *  Main Activity which is the Launcher Activity
+ *  Home Activity which is the Launcher Activity
  */
 
 class HomeActivity : AppCompatActivity() {
