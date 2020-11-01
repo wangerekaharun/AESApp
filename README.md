@@ -1,2 +1,2 @@
-# GradleBuildPlugins
-Sample project that shows you how to configure plugins
+# AESApp
+Sample project for AES that gets data from a CSV File

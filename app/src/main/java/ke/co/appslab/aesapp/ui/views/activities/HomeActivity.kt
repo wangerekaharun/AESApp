@@ -1,15 +1,16 @@
-package ke.co.appslab.gradleplugins
+package ke.co.appslab.aesapp.ui.views.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ke.co.appslab.aesapp.R
 
 /**
  *  Main Activity which is the Launcher Activity
  */
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home)
     }
 }

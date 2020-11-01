@@ -1,4 +1,4 @@
-package ke.co.appslab.gradleplugins
+package ke.co.appslab.aesapp
 
 import org.junit.Test
 
