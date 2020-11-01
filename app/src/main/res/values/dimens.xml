@@ -5,4 +5,7 @@
   <dimen name="normalMargin">16dp</dimen>
   <dimen name="smallMargin">6dp</dimen>
   <dimen name="mediumMargin">10dp</dimen>
+  <dimen name="largeMargin">32dp</dimen>
+  <dimen name="cardRadius">5dp</dimen>
+  <dimen name="cardElevation">5dp</dimen>
 </resources>

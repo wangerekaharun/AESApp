@@ -4,4 +4,13 @@
   <string name="text_username_hint">Username</string>
   <string name="text_password_hint">Password</string>
   <string name="text_login_label">Login</string>
+  <string name="text_search_hint">AE Term</string>
+  <string name="text_predict_aes">Predict AES</string>
+  <string name="text_probable_aes">Probable AES</string>
+  <string name="text_serial_no">1</string>
+  <string name="text_aes">Anaemia</string>
+  <string name="text_aes_term_label">AES Term:</string>
+  <string name="text_aes_term">Vomit</string>
+  <string name="text_predicted_aes">Predicted AES</string>
+  <string name="text_update_rules">Update Rules</string>
 </resources>

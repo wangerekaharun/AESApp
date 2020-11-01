@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_margin="@dimen/normalMargin">
+
+  <com.google.android.material.card.MaterialCardView
+    style="@style/AesCard"
+    android:id="@+id/cardUpdateRules"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/normalMargin">
+
+      <ImageView
+        android:id="@+id/imgUpdateRules"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_reload"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+      <TextView
+        style="@style/NormalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_update_rules"
+        android:layout_marginStart="@dimen/largeMargin"
+        app:layout_constraintStart_toEndOf="@id/imgUpdateRules"
+        app:layout_constraintTop_toTopOf="@id/imgUpdateRules"
+        app:layout_constraintBottom_toBottomOf="@id/imgUpdateRules"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+
+  <TextView
+    style="@style/NormalTextView"
+    android:id="@+id/tvPredictAes"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/text_predict_aes"
+    android:layout_marginTop="@dimen/normalMargin"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/cardUpdateRules"/>
+
+  <com.google.android.material.textfield.TextInputLayout
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:id="@+id/layoutPredictAes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:endIconMode="custom"
+    app:endIconDrawable="@drawable/ic_round_search_24"
+    android:hint="@string/text_search_hint"
+    android:layout_marginTop="@dimen/normalMargin"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvPredictAes">
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <TextView
+    style="@style/NormalTextView"
+    android:id="@+id/tvProbableAesLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/text_probable_aes"
+    android:layout_marginTop="@dimen/largeMargin"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/layoutPredictAes"/>
+
+  <com.google.android.material.card.MaterialCardView
+    style="@style/AesCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/smallMargin"
+    app:layout_constraintTop_toBottomOf="@id/tvProbableAesLabel"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/mediumMargin">
+      <TextView
+        style="@style/NormalTextView"
+        android:id="@+id/tvAesTermLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_aes_term_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+      <TextView
+        style="@style/NormalTextView"
+        android:id="@+id/tvAesTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_aes_term"
+        android:layout_marginStart="@dimen/normalMargin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+      <TextView
+        style="@style/MediumTextView"
+        android:id="@+id/tvPredictedAesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_predicted_aes"
+        android:layout_marginTop="@dimen/mediumMargin"
+        app:layout_constraintTop_toBottomOf="@id/tvAesTermLabel"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mediumMargin"
+        tools:listitem="@layout/item_aes_results"
+        tools:itemCount="3"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/tvPredictedAesLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

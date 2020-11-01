@@ -12,4 +12,16 @@
     <item name="android:textSize">@dimen/textSizeNormal</item>
   </style>
 
+  <style name="MediumTextView" parent="@android:style/TextAppearance">
+    <item name="android:textColor">@android:color/darker_gray</item>
+    <item name="android:textSize">@dimen/textSizeMedium</item>
+  </style>
+
+  <style name="AesCard" parent="Widget.MaterialComponents.CardView">
+    <item name="cardUseCompatPadding">true</item>
+    <item name="cardCornerRadius">@dimen/cardRadius</item>
+    <item name="cardElevation">@dimen/cardElevation</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
 </resources>
