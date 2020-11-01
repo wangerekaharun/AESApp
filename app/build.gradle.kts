@@ -42,6 +42,8 @@ android {
         implementation(Libraries.materialComponents)
         implementation(Libraries.navigationFragment)
         implementation(Libraries.navigationUi)
+        implementation(Libraries.kotlinCsv)
+        implementation(Libraries.kotlinGrass)
         testImplementation(TestLibraries.junit4)
         androidTestImplementation(TestLibraries.testRunner)
         androidTestImplementation(TestLibraries.espresso)

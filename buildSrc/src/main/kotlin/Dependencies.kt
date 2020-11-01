@@ -25,6 +25,12 @@ object Versions {
 
     // Navigation
     const val navigation = "2.3.1"
+
+    // Kotlin CSV Reader
+    const val kotlinCsv = "0.12.0"
+
+    // Kotlin Grass
+    const val kotlinGrass = "0.4.1"
 }
 
 object BuildPlugins {
@@ -51,6 +57,8 @@ object Libraries {
     const val materialComponents = "com.google.android.material:material:${Versions.material}"
     const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+    const val kotlinCsv = "com.github.doyaaaaaken:kotlin-csv-jvm:${Versions.kotlinCsv}"
+    const val kotlinGrass = "com.vhl.blackmo:kotlin-grass-jvm:${Versions.kotlinGrass}"
 }
 
 object AndroidSDK {
