@@ -29,6 +29,8 @@ android {
         implementation(Libraries.ktxCore)
         implementation(Libraries.constraintLayout)
         implementation(Libraries.materialComponents)
+        implementation(Libraries.navigationFragment)
+        implementation(Libraries.navigationUi)
         testImplementation(TestLibraries.junit4)
         androidTestImplementation(TestLibraries.testRunner)
         androidTestImplementation(TestLibraries.espresso)

@@ -22,6 +22,9 @@ object Versions {
     const val detekt = "1.14.2"
     const val dokka = "1.4.10.2"
     const val gradleVersionsPlugin = "0.33.0"
+
+    // Navigation
+    const val navigation = "2.3.1"
 }
 
 object BuildPlugins {
@@ -46,6 +49,8 @@ object Libraries {
         "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
     const val ktxCore = "androidx.core:core-ktx:${Versions.ktx}"
     const val materialComponents = "com.google.android.material:material:${Versions.material}"
+    const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
 }
 
 object AndroidSDK {
